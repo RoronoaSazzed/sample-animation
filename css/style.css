@@ -1,0 +1,66 @@
+h3 {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 30px;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.iconSection {
+    display: grid;
+    place-items: center;
+    min-height: 250px;
+    padding: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.one,
+.two,
+.three {
+    font-size: 35px;
+    color: lightblue;
+    padding: 35px;
+    border-radius: 75% 0% 75% 0%;
+    position: absolute;
+    transform-origin: left bottom;
+    transition: all 300ms;
+}
+
+.one {
+    background-color: #00a3e5;
+}
+
+.two {
+    z-index: -1;
+    color: transparent;
+    background-color: #28348b;
+}
+
+.three {
+    z-index: -2;
+    color: transparent;
+    background-color: #e6007e;
+}
+
+.parentDiv:hover .two {
+    transform: rotate(-60deg);
+
+}
+
+.parentDiv:hover .three {
+    transform: rotate(60deg);
+}
+
+.titleSection {
+    text-align: center;
+}
+
+.paraSection {
+    text-align: center;
+    padding: 15px;
+    margin: 15px 0px;
+}
