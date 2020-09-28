@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 h3 {
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 30px;
@@ -19,6 +26,7 @@ a:hover{
 }
 
 .iconSection {
+    display: -ms-grid;
     display: grid;
     place-items: center;
     min-height: 250px;
@@ -39,7 +47,11 @@ a:hover{
     padding: 35px;
     border-radius: 75% 0% 75% 0%;
     position: absolute;
-    transform-origin: left bottom;
+    -webkit-transform-origin: left bottom;
+        -ms-transform-origin: left bottom;
+            transform-origin: left bottom;
+    -webkit-transition: all 300ms;
+    -o-transition: all 300ms;
     transition: all 300ms;
     border: 2px solid white;
 }
@@ -67,11 +79,15 @@ a:hover{
 }
 
 .parentDiv:hover .two {
-    transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+        -ms-transform: rotate(-60deg);
+            transform: rotate(-60deg);
 }
 
 .parentDiv:hover .three {
-    transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+            transform: rotate(60deg);
 }
 
 .titleSection {
